@@ -1,0 +1,61 @@
+/* 
+* Custom General Classes
+*/
+@media (min-width: 992px) {
+	.custom-margin-top-1 {
+		margin-top: 5.3rem;
+	}
+
+	.custom-carousel-style-1 {
+		min-width: 130%;
+		width: 130%;
+		margin-top: -2rem;
+	}
+
+	html.ie .custom-carousel-style-1 {
+		margin-left: -3rem;
+	}
+}
+/* 
+* Image Frame
+*/
+.image-frame .image-frame-wrapper .custom-image-frame-info-box-style-1 {
+	position: relative;
+	background: transparent;
+	padding: 11.2px 54.4px;
+	padding: 0.7rem 3.4rem;
+}
+.image-frame .image-frame-wrapper .custom-image-frame-info-box-style-1:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(28, 31, 33, 0.9);
+	z-index: -1;
+	-webkit-transform: skewX(-15deg);
+					transform: skewX(-15deg);
+}
+
+/*
+* Nav
+*/
+.nav.custom-nav-style-1 > .nav-item > .nav-link.active {
+	position: relative;
+	color: #FFF !important;
+}
+.nav.custom-nav-style-1 > .nav-item > .nav-link.active:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #CCC;
+	z-index: -1;
+	-webkit-transform: skewX(-15deg);
+					transform: skewX(-15deg);
+}

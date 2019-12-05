@@ -1,0 +1,64 @@
+/*
+* General Styles
+*/
+.custom-background-style-1 {
+	position: relative;
+}
+.custom-background-style-1:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50px;
+	bottom: 50px;
+	left: 50%;
+	right: 0;
+	width: 100vw;
+	background-color: #f1f3f7;
+	z-index: -1;
+	-webkit-transform: translate3d(-50%, 0, 0);
+					transform: translate3d(-50%, 0, 0);
+}
+
+@media (max-width: 991px) {
+	.custom-background-position-1 {
+		background-position: -220px 0 !important;
+	}
+}
+.custom-image-frame-style-1 .image-frame-wrapper .image-frame-info .custom-image-frame-title {
+	-webkit-transform: translate3d(0, 25px, 0);
+					transform: translate3d(0, 25px, 0);
+	-webkit-transition: ease transform 300ms;
+	transition: ease transform 300ms;
+}
+.custom-image-frame-style-1 .image-frame-wrapper .image-frame-info .custom-image-frame-btn {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: translate3d(0, 10px, 0);
+					transform: translate3d(0, 10px, 0);
+}
+.custom-image-frame-style-1:after {
+	-webkit-transition: ease border-color 300ms;
+	transition: ease border-color 300ms;
+}
+.custom-image-frame-style-1:hover .image-frame-wrapper .image-frame-info .custom-image-frame-title {
+	-webkit-transform: translate3d(0, 0, 0);
+					transform: translate3d(0, 0, 0);
+}
+.custom-image-frame-style-1:hover .image-frame-wrapper .image-frame-info .custom-image-frame-btn {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translate3d(0, 0, 0);
+					transform: translate3d(0, 0, 0);
+	-webkit-transition: ease opacity 300ms 300ms, ease visibility 300ms 300ms, ease transform 300ms 300ms;
+	transition: ease opacity 300ms 300ms, ease visibility 300ms 300ms, ease transform 300ms 300ms;
+}
+.custom-image-frame-style-1:hover:after {
+	border-color: #CCC;
+}
+
+/*
+* Header
+*/
+html #header .header-nav-main nav > ul > li > a {
+	font-weight: 700 !important;
+}

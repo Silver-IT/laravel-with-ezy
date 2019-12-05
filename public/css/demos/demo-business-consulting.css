@@ -1,0 +1,12 @@
+/*
+* Header
+*/
+html {
+	/* Sticky Header Active */
+}
+html #header.header-semi-transparent .header-body:before, html #header.header-semi-transparent-light .header-body:before {
+	opacity: 0.6;
+}
+html:not(.sticky-header-active) #header.header-semi-transparent-light .header-nav-main nav > ul > li:not(.active) > a {
+	color: #707070;
+}

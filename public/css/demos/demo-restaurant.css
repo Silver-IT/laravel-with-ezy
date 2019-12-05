@@ -1,0 +1,69 @@
+/*
+* General Custom Styles
+*/
+.custom-font-1 {
+	font-family: 'Playfair Display', serif !important;
+}
+
+.custom-top-image-border-1 {
+	position: relative;
+}
+.custom-top-image-border-1:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -1.8vw;
+	left: 0;
+	width: 100%;
+	height: 8vw;
+	background: url(../../img/demos/restaurant/styled-border-2.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.custom-top-image-border-2 {
+	position: relative;
+}
+.custom-top-image-border-2:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -3.2vw;
+	left: 0;
+	width: 100%;
+	height: 8vw;
+	background: url(../../img/demos/restaurant/styled-border-1.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+/*
+* Header
+*/
+@media (min-width: 992px) {
+	html:not(.sticky-header-active) #header.header-transparent .header-nav-main nav > ul > li > a {
+		color: #FFF !important;
+	}
+	html:not(.sticky-header-active) #header .header-nav.header-nav-line-under-text.custom-header-nav-line-under-text-style .header-nav-main nav > ul > li.active > a, html:not(.sticky-header-active) #header .header-nav.header-nav-line-under-text.custom-header-nav-line-under-text-style .header-nav-main nav > ul > li:hover > a, html:not(.sticky-header-active) #header .header-nav.header-nav-line-under-text.custom-header-nav-line-under-text-style .header-nav-main nav > ul > li:focus > a {
+		color: #FFF;
+	}
+
+	#header .header-nav.header-nav-line-under-text.custom-header-nav-line-under-text-style .header-nav-main nav > ul > li > a:before {
+		border-width: 5px;
+		top: 64%;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	#header .header-nav-main.header-nav-main-uppercase nav > ul > li > a {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+}
+/*
+* Food Menu
+*/
+.food-menu .menu-item {
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #CCC;
+}
